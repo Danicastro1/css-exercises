@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  transition: width 4s;
 }
 
 button {
@@ -17,3 +18,10 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+
+<!--with the code below, the button moves horizontally to the left. Need to figure out how to get button to get slightly larger when hovering over it-->
+
+button:hover{
+  background-color: green;
+}
+

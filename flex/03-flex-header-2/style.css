@@ -12,6 +12,8 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 5px;
+  display: flex;
 }
 
 .profile-image {
@@ -20,6 +22,9 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .logo {
@@ -34,15 +39,30 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  padding: 8px 14px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+
+}
+.link-containers {
+  display: flex;
+  gap: 15px;
+}
+
+.right-side {
+  display:flex; 
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 5px;
+  padding: 12px;
 }
