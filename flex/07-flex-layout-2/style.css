@@ -2,27 +2,125 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+/* .front {
+  display: flex;
+  flex-direction: column;
+} body already contains this info*/
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  padding: 5px;
+  font-size: 37px; 
+  font-weight: bolder;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  /* display: flex; 
+  in the solutions display flex is not used*/
+  /* justify-content: flex-start;
+  align-items: flex-start; */
+  /* flex-direction: column; 
+  this info does not affect the list inside. see ul below*/
+  /* flex-wrap: wrap; 
+  this does not need to be wrapped*/
+  flex-shrink: 0;
+  /* flex: 0 0 auto; 
+  in the soltions they only used flex shrink*/
+  padding: 15px;
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px; 
+  in the solutions these were not used*/
+  /* flex-wrap: wrap; 
+  moved to middle container to see if it makes difference*/
+  /* flex: 1; 
+  moved to middle container to see if it makes difference*/
+  /* align-content: flex-end; 
+  tried to get containers to the right side of screen*/
+
 }
+
+.middle {
+  display: flex;
+  /* margin: 10px; 
+  gap: 15px;  
+  not used in solutions*/
+  flex-wrap: wrap;
+  /* want to see what happens without it; no wrap*/
+  /* flex-direction: row; 
+  not used in the solution*/
+  /* flex: 1; 
+  goes into the item not the container*/
+  /* justify-content: flex-start;
+  align-content: flex-start; 
+  not used in the solution*/
+  /* flex-grow: 1; 
+  failed to take up entire box*/
+  /* justify-content: flex-start; 
+  to move everything to the very top of the screen*/ 
+  padding: 32px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  /* used flex: initial but solution says 1*/
+
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  in solutions no flex was used*/
+
+}
+li {
+  margin-bottom: 16px;
+}
+
+/* .header,.card,.sidebar,.footer {
+  display: flex;
+  flex-direction: column;
+} by adding this to the body no need for extra lines*/
